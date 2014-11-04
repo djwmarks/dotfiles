@@ -23,8 +23,17 @@ function! <SID>SynStack()
 	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
+" Fix netrw with brew-installed OpenSSH.
+let g:netrw_scp_cmd="/usr/local/bin/scp -q"
+
+" Make.
+autocmd Filetype make setlocal noexpandtab ts=8 sts=8
+
 " Python.
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
 
 " Ruby.
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
+" Shell
+autocmd Filetype sh setlocal ts=4 sts=4 sw=4
