@@ -22,6 +22,3 @@
 [submodule "vim/bundle/css-color"]
 	path = vim/bundle/css-color
 	url = https://github.com/skammer/vim-css-color.git
-[submodule "vim/bundle/named.vim"]
-	path = vim/bundle/named.vim
-	url = https://github.com/dominicmarks/named.vim.git
