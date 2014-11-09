@@ -27,7 +27,7 @@ endfunc
 let g:netrw_scp_cmd="/usr/local/bin/scp -q"
 
 " Make.
-autocmd Filetype make setlocal noexpandtab ts=8 sts=8
+autocmd Filetype make setlocal noexpandtab ts=8 sts=8 sw=8
 
 " Python.
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
